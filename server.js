@@ -10,7 +10,6 @@ app.use(express.json());
 
 //ROUTER
 const userRouter = require('./router/user.router');
-const avisRouter = require('./router/avis.router');
 const articleRouter = require('./router/article.router');
 
 //MONGO
@@ -24,7 +23,6 @@ const PORT = process.env.PORT || 8080;
 
 //PREFIX
 app.use("/api/user", userRouter);
-app.use("/api/avis", avisRouter);
 app.use("/api/article", articleRouter);
 
 
